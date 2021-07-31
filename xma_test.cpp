@@ -2,8 +2,8 @@
 #include <sstream>
 #include <stdlib.h>
 
-#include "include\xma_parse.h"
-#include "include\Bit_stream.h"
+#include "xma_parse.h"
+#include "Bit_stream.h"
 
 using namespace std;
 
@@ -101,7 +101,7 @@ int main(int argc, char * argv[]) {
 
         if (!rs) 
         {
-            cerr << "error opening rebuild output file!" << endl;
+            cerr << "error opening rebuild output file!\n";
             exit(EXIT_FAILURE);
         }
     }
@@ -115,6 +115,13 @@ int main(int argc, char * argv[]) {
     else if (xmaversion == 2) 
     {
         cout << "XMA" << xmaversion << endl;
+    }
+    
+    else 
+    {
+
+       cout << "This file is not a XMA\n";
+
     }
 
     cout << "offset: " << hex << offset << dec << endl;
