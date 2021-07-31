@@ -16,7 +16,7 @@ jobs:
     
     - name: install dependencies
       run: |
-        apk add build-base git zip gawk
+        sudo apt install -y git zip gawk binutils
       
     - name: make 
       run: make
