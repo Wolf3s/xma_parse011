@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Bit_stream.h"
-#include "xma_parse.h"
+#include "include\Bit_stream.h"
+#include "include\xma_parse.h"
 
 using namespace std;
 
