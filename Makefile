@@ -1,4 +1,4 @@
-make: xma_test.o xma_parse.o Bit_stream.gch xma_parse.gch
+make: xma_test.o xma_parse.o 
    
 clean:
-	rm -f xma_test.o xma_parse.o Bit_stream.gch xma_parse.gch
+	rm -f xma_test.o xma_parse.o
