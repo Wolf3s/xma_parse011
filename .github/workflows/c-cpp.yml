@@ -9,14 +9,14 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
     
     - name: install dependencies
       run: |
-        apt install -y git zip gawk binutils
+       sudo apt install -y git zip gawk binutils
       
     - name: make 
       run: make
