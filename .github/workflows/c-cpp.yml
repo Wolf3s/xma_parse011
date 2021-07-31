@@ -13,6 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make
-      run: make xma_test
+    
+    - name: install dependencies
+      run: sudo apt -y install binutils g++ --
+      
+    - name: make 
+      run: make 
 

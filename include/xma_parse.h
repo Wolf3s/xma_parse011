@@ -2,7 +2,6 @@
 #define _XMA_PARSE_H
 
 #include <iostream>
-
 #include "Bit_stream.h"
 
 namespace Parse_XMA {
