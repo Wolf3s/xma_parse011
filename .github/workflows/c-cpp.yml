@@ -16,7 +16,7 @@ jobs:
     
     - name: install dependencies
       run: |
-        sudo apt install -y git zip gawk binutils
+        apt install -y git zip gawk binutils
       
     - name: make 
       run: make
