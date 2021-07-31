@@ -18,5 +18,6 @@ jobs:
       run: sudo apt install -y binutils g++
       
     - name: make 
-      run: make 
+      run: |
+        apk add build-base git zip gawk
 
