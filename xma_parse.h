@@ -72,7 +72,7 @@ namespace Parse_XMA {
 
     enum {
         packet_size_bytes = 0x800,
-        packet_size_bytes = 0x1000,
+        packet_size_bytesxma2 = 0x1000,
         packet_header_size_bytes = 4,
         frame_header_size_bits = 15,
         frame_sync_size_bits = 15,
