@@ -114,7 +114,7 @@ int main(int argc, char * argv[]) {
     } 
     else if (xmaversion == 2) 
     {
-        cout << "XMA" << xmaversion << endl;
+        cout << "XMA " << xmaversion << endl;
     }
     
     else 
