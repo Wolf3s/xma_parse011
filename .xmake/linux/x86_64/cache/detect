@@ -1,0 +1,60 @@
+{
+    find_program_gcc_arch_x86_64_plat_linux_checktoolcxx = {
+        gcc = "/usr/bin/gcc"
+    },
+    ["detect.tools.gcc.has_flags"] = {
+        ["/usr/bin/gcc_9.3.0-17ubuntu1"] = {
+            ["-print-multi-directory"] = true,
+            ["-S"] = true,
+            ["-dumpspecs"] = true,
+            ["-Xpreprocessor"] = true,
+            ["-print-multi-os-directory"] = true,
+            ["-print-multiarch"] = true,
+            ["-print-libgcc-file-name"] = true,
+            ["-shared"] = true,
+            ["-dumpversion"] = true,
+            ["-B"] = true,
+            ["-pipe"] = true,
+            ["-dumpmachine"] = true,
+            ["-time"] = true,
+            ["--version"] = true,
+            ["-no-canonical-prefixes"] = true,
+            ["-print-search-dirs"] = true,
+            ["-x"] = true,
+            ["-Xassembler"] = true,
+            ["-print-sysroot-headers-suffix"] = true,
+            ["-save-temps"] = true,
+            ["--help"] = true,
+            ["-pie"] = true,
+            ["-print-sysroot"] = true,
+            ["-print-multi-lib"] = true,
+            ["-v"] = true,
+            ["-c"] = true,
+            ["-o"] = true,
+            ["-pass-exit-codes"] = true,
+            ["-Xlinker"] = true,
+            ["--target-help"] = true,
+            ["-E"] = true,
+            ["--param"] = true
+        }
+    },
+    ["lib.detect.has_flags"] = {
+        ["linux_x86_64_/usr/bin/gcc_9.3.0-17ubuntu1_cxx_cxflags__-MMD -MF"] = true,
+        ["linux_x86_64_/usr/bin/gcc_9.3.0-17ubuntu1_cxx_cxflags__-fdiagnostics-color=always"] = true
+    },
+    find_program_gcc_arch_x86_64_plat_linux_checktoolld = {
+        ["g++"] = "/usr/bin/g++"
+    },
+    find_programver = {
+        ["/usr/bin/gcc"] = "9.3.0-17ubuntu1"
+    },
+    find_program = {
+        ["/usr/bin/gcc"] = "/usr/bin/gcc",
+        dmd = false,
+        gcc = "/usr/bin/gcc",
+        gdc = false,
+        zig = false,
+        ccache = "/usr/bin/ccache",
+        ldc2 = false
+    }
+}
