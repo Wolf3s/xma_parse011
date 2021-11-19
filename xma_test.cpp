@@ -33,7 +33,6 @@ int main(int argc, char * argv[]) {
     double programversion = 0.11;
     char XMA;
     char XMA2;
-    char xmaversion;
 
     cout << "XMA/XMA2 stream parser " << programversion << " by hcs" << endl << endl << flush;
 
@@ -108,20 +107,18 @@ int main(int argc, char * argv[]) {
 
     cout << "filename: " << input_filename << endl;
     cout << version;
-    if (xmaversion == 1) 
+    if (version == 1) 
     {
-        cout <<  "XMA " << xmaversion << endl;
+        cout <<  "XMA " << version << endl;
     } 
-    else if (xmaversion == 2) 
+    else if (version == 2) 
     {
-        cout << "XMA " << xmaversion << endl;
+        cout << "XMA " << version << endl;
     }
     
     else 
     {
-
        cout << "This file is not a XMA\n";
-
     }
 
     cout << "offset: " << hex << offset << dec << endl;
